@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cars Index</title>
+</head>
+
+<body>
+  <h1>All Cars</h1>
+  <a href="/cars/new">Add new Car</a>
+  <br>
+  <% cars.forEach(car=> { %>
+    <br>
+    <li>
+      <a href="/cars/<%= car._id %>">
+        <%= car.model %>
+      </a>
+    </li>
+    <% }); %>
+      </ul>
+</body>
+
+</html>
